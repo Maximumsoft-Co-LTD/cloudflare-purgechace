@@ -52,7 +52,7 @@ func main() {
 		fmt.Print("confrim purge cache ALL domain [Y/n] :")
 		confrim, _ := reader.ReadString('\n')
 		confrim = strings.TrimRight(confrim, "\n")
-		confrim = strings.TrimRight(text, "\r")
+		confrim = strings.TrimRight(confrim, "\r")
 		confrim, _ = url.QueryUnescape(confrim)
 		if confrim != "Y" {
 			fmt.Println("exit program...")
